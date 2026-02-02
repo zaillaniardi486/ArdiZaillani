@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Mohammad Ardi Zaillani</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -9px;
+            top: 0;
+            width: 18px;
+            height: 18px;
+            background-color: #3b82f6;
+            border-radius: 50%;
+            border: 4px solid #fff;
+            box-shadow: 0 0 0 2px #3b82f6;
+        }
+
+        .fade-in {
+            animation: fadeIn 1s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <span class="text-xl font-bold gradient-text">MAZ.</span>
+            <div class="space-x-8 hidden md:block">
+                <a href="#home" class="hover:text-blue-600 transition">Beranda</a>
+                <a href="#about" class="hover:text-blue-600 transition">Tentang</a>
+                <a href="#education" class="hover:text-blue-600 transition">Pendidikan</a>
+                <a href="#contact" class="hover:text-blue-600 transition">Kontak</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20 px-6">
+        <div class="max-w-4xl mx-auto text-center fade-in">
+            <!-- Profile Photo Section -->
+            <div class="relative w-32 h-32 mx-auto mb-8">
+                <div class="w-full h-full rounded-full bg-slate-200 border-4 border-white shadow-lg overflow-hidden flex items-center justify-center">
+                    <!-- Foto diatur langsung di atribut src -->
+                    <img src="https://i.ibb.co.com/1Yt9J8xy/unnamed.jpg" alt="Foto Profil Mohammad Ardi Zaillani" class="w-full h-full object-cover">
+                </div>
+            </div>
+
+            <div class="mb-6 inline-block p-1 rounded-full bg-blue-100 px-4 py-1 text-blue-600 text-sm font-semibold">
+                Selamat Datang di Portofolio Saya
+            </div>
+            <h1 class="text-5xl md:text-6xl font-extrabold mb-6 leading-tight">
+                Halo, Saya <span class="gradient-text">Mohammad Ardi Zaillani</span>
+            </h1>
+            <p class="text-lg text-slate-600 mb-10 max-w-2xl mx-auto">
+                Seorang pembelajar yang berdedikasi dengan latar belakang pendidikan yang kuat di Magetan. Senang menjalin koneksi dan berbagi pengalaman.
+            </p>
+            <div class="flex justify-center gap-4">
+                <a href="#education" class="bg-blue-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-700 transition shadow-lg shadow-blue-200">
+                    Riwayat Pendidikan
+                </a>
+                <a href="#contact" class="bg-white border border-slate-200 px-8 py-3 rounded-full font-semibold hover:bg-slate-50 transition">
+                    Hubungi Saya
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white border-y border-slate-100">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="rounded-2xl overflow-hidden shadow-2xl bg-slate-200 aspect-square flex items-center justify-center">
+                    <!-- Foto diatur langsung di atribut src -->
+                    <img src="https://i.ibb.co.com/1Yt9J8xy/unnamed.jpg" alt="Foto Profil Mohammad Ardi Zaillani" class="w-full h-full object-cover">
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">Tentang Saya</h2>
+                    <p class="text-slate-600 mb-6 leading-relaxed">
+                        Nama saya Mohammad Ardi Zaillani. Saya tinggal di Ds. Candirejo RT 5\RW 2, Kec. Magetan, Kab. Magetan. Saya memiliki minat yang besar dalam pengembangan diri dan kontribusi positif bagi lingkungan sekitar.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center text-blue-600">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <span class="text-slate-700">Magetan, Jawa Timur</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center text-blue-600">
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <span class="text-slate-700">Ds. Candirejo RT 5\RW 2</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-20 bg-slate-50">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Perjalanan Pendidikan</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="relative border-l-2 border-blue-200 ml-3 md:ml-6 space-y-12">
+                <!-- SMA -->
+                <div class="relative pl-8 timeline-item">
+                    <h3 class="text-xl font-bold">SMA 1 Magetan</h3>
+                    <p class="text-blue-600 font-medium mb-2">Sekolah Menengah Atas</p>
+                    <p class="text-slate-600">Melanjutkan jenjang pendidikan menengah atas di salah satu sekolah favorit di Kabupaten Magetan.</p>
+                </div>
+
+                <!-- SMP -->
+                <div class="relative pl-8 timeline-item">
+                    <h3 class="text-xl font-bold">SMP Negeri 1 Magetan</h3>
+                    <p class="text-blue-600 font-medium mb-2">Sekolah Menengah Pertama</p>
+                    <p class="text-slate-600">Mengembangkan minat dan bakat di masa remaja di pusat kota Magetan.</p>
+                </div>
+
+                <!-- SD -->
+                <div class="relative pl-8 timeline-item">
+                    <h3 class="text-xl font-bold">SDN Candirejo 1</h3>
+                    <p class="text-blue-600 font-medium mb-2">Sekolah Dasar</p>
+                    <p class="text-slate-600">Menyelesaikan pendidikan dasar enam tahun di desa kelahiran.</p>
+                </div>
+
+                <!-- TK -->
+                <div class="relative pl-8 timeline-item">
+                    <h3 class="text-xl font-bold">TK Marsudisiwi</h3>
+                    <p class="text-blue-600 font-medium mb-2">Taman Kanak-Kanak</p>
+                    <p class="text-slate-600">Masa emas pertumbuhan dan mulai belajar bersosialisasi.</p>
+                </div>
+
+                <!-- Pegrub -->
+                <div class="relative pl-8 timeline-item">
+                    <h3 class="text-xl font-bold">Pegrub Marsudisiwi</h3>
+                    <p class="text-blue-600 font-medium mb-2">Pendidikan Usia Dini</p>
+                    <p class="text-slate-600">Awal mula perjalanan pendidikan saya dimulai di sini.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-8">Mari Terhubung</h2>
+            <div class="bg-blue-600 rounded-3xl p-10 text-white shadow-2xl">
+                <p class="text-xl mb-8">Apakah Anda ingin berdiskusi atau sekadar menyapa?</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-lg mx-auto">
+                    <div class="flex items-center justify-center gap-3 bg-white/10 p-4 rounded-xl backdrop-blur-sm cursor-pointer hover:bg-white/20 transition">
+                        <i class="fab fa-whatsapp text-2xl"></i>
+                        <span>WhatsApp</span>
+                    </div>
+                    <div class="flex items-center justify-center gap-3 bg-white/10 p-4 rounded-xl backdrop-blur-sm cursor-pointer hover:bg-white/20 transition">
+                        <i class="fas fa-envelope text-2xl"></i>
+                        <span>Email Me</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 border-t border-slate-100">
+        <div class="max-w-6xl mx-auto px-6 text-center text-slate-500">
+            <p>&copy; 2024 Mohammad Ardi Zaillani. Dibuat dengan dedikasi.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
